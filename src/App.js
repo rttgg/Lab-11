@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+//TODO: import react fragment
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      //TODO: create counter.
+      //TODO counter should contain state: this.state = { count: 0};
+      //TODO state should be changed based on clicks to the increment/decroment btns.
+      //TODO: state changes should be updated in the p tag.
+      <React.Fragment>
+        {/* TODO add p element to show current number of clicks. Starts at zero */}
+        <p>0</p>
+        {/* TODO: add buttons, increment and decroment (+, -)  */}
+        <button >+</button>
+        <button >-</button>
+      </React.Fragment>
+    )
+  }
 }
-
 export default App;
